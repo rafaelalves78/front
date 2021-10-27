@@ -1,15 +1,18 @@
 import './App.css';
-import Navbar from './component/Heading/Navbar'
-//import Item from './component/Anuncio/Item'
-import {BrowserRouter as Router} from 'react-router-dom';
-//import Modal from './component/Modal'
-//import Perfil from './component/Perfil/Profile'
+import ContextAllPost from './context/AllPostContext';
+import ContextPost from './context/PostContext';
+import Routes from './Routes/Routes';
+
 function App() {
   return (
-    <Router>
-
-      <Navbar />
-    </Router>
+    <>
+      <ContextAllPost>
+        <ContextPost>
+          <Routes />
+        </ContextPost>
+      </ContextAllPost>
+    
+    </>
   );
 }
 

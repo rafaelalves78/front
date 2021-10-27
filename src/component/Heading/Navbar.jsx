@@ -6,9 +6,11 @@ import {
   NavMenu,
 
   NavBtnLink,
-  NavSearch
+
 } from './NavbarElements';
 import logo from '../../image/boatroca.svg';
+
+import Search from '../Search'
 
 
 const Navbar = props => {
@@ -20,15 +22,13 @@ const Navbar = props => {
         </NavLink>
         <Bars />
         <NavMenu>
-          <NavSearch>
-            <input type="text" placeholder="Find car,mobile phone and more..."></input>
-          </NavSearch>
 
-          <NavLink to='/sign-up' activeStyle>
+          <Search />
+          <NavLink to='/signup' activeStyle>
             Sign Up
           </NavLink>
 
-          <NavBtnLink to='/sign-in'>Sign In</NavBtnLink>
+          <NavBtnLink to='/login'>Sign In</NavBtnLink>
         </NavMenu>
 
       </Nav>

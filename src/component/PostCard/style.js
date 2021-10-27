@@ -17,7 +17,7 @@ export const Anuncio = styled.div`
 `;
 
 export const Title = styled.h4`
-  font-family: 'nunito', sans-serif;
+  font-family:  sans-serif;
   font-size: 18px;
   color: #4a4a4a;
   font-weight: 400;
@@ -25,7 +25,7 @@ export const Title = styled.h4`
 `;
 
 export const Price = styled.h5`
-  font-family: 'nunito', sans-serif;
+  font-family:  sans-serif;
   font-size: 20px;
   color: #000;
   font-weight: 700;
